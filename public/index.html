@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="cvApp">
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="./style/stylesheet.css">
+    <script src="./script/lib/angular.js"></script>
+    <script src="./script/lib/angular-ui-router.min.js"></script>
+    <script src="./script/cv.js"></script>
+    <script src="./script/cvroutes.js"></script>
+    <title>André Zsolt CV</title>
+  </head>
+  <body ng-controller="test">
+    <header>
+      <img src="./image/longerAZS.png" alt="photo about André Zsolt"/>
+      <ul class="main-menu">
+        <li><a ui-sref="summary" ui-sref-active="selected-route">Summary</a></li>
+        <li><a ui-sref="skills" ui-sref-active="selected-route">Skills</a></li>
+        <li><a ui-sref="works" ui-sref-active="selected-route">Works</a></li>
+        <li><a ui-sref="education" ui-sref-active="selected-route">Education</a></li>      
+      </ul>
+    </header>
+    <div class="views" ui-view></div>
+  </body>
+</html>
